@@ -2,13 +2,16 @@ schema: '2.0'
 stages:
   train:
     cmd: Rscript train/regression.R
+    params:
+      params.yaml:
+        train.modeltype: lmer
     outs:
     - path: metrics/metrics.json
-      md5: debf91482eaeef108a788079cbb0d574
-      size: 48
+      md5: a987c93adeb1a555edaad52cb2dbb368
+      size: 49
     - path: models/model.RDS
-      md5: 15ceacaad5718225080a84b30b0d8d7f
-      size: 3676
+      md5: f0b054f1f2fc2aafd40f2d7f77d9dd85
+      size: 134623
     - path: plots/fit.png
-      md5: df952c15f5555f74fca1cc5ac775bbd4
-      size: 133162
+      md5: c23c07523028b45b6e8c51b1a92490d6
+      size: 219058

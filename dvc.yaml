@@ -1,6 +1,8 @@
 stages:
   train:
     cmd: Rscript train/regression.R
+    params:
+    - train.modeltype
     outs:
     - models/model.RDS
     metrics:
