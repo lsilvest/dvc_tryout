@@ -2,7 +2,8 @@ stages:
   train:
     cmd: Rscript train/regression.R
     outs:
-    - metrics/metrics.json
     - models/model.RDS
+    metrics:
+    - metrics/metrics.json
     plots:
     - plots/fit.png
