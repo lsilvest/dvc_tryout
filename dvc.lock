@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: Rscript train/regression.R
+    outs:
+    - path: metrics/metrics.json
+      md5: debf91482eaeef108a788079cbb0d574
+      size: 48
+    - path: models/model.RDS
+      md5: 15ceacaad5718225080a84b30b0d8d7f
+      size: 3676
+    - path: plots/fit.png
+      md5: df952c15f5555f74fca1cc5ac775bbd4
+      size: 133162
