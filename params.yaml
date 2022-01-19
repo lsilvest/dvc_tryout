@@ -1,2 +1,2 @@
 train:
-  modeltype: lmer
+  modeltype: lm

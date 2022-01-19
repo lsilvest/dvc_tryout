@@ -1,5 +1,8 @@
 stages:
   train:
+    deps:
+    - data/population.csv
+    - train/regression.R
     cmd: Rscript train/regression.R
     params:
     - train.modeltype
